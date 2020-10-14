@@ -1,0 +1,14 @@
+production_platform:
+  application: shipit-tester
+  runtime_ids:
+    - production
+
+deploy:
+  override:
+    - ./test_timeout: { timeout: 14 }
+  retries_on_timeout: 3
+
+rollback:
+  override:
+    - ./test_timeout: { timeout: 14 }
+  retries_on_timeout: 4
