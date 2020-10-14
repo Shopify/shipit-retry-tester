@@ -1,0 +1,12 @@
+foo=$RANDOM
+echo "num is $foo"
+
+if [ $((foo%2)) -eq 0 ];
+then
+    echo "num is even, so sleeping for 20seconds and making it timeout"
+    sleep 20s
+    echo "done!";
+else
+    echo "echo num is even, sso finishing up deploy right now"
+    echo "done!";
+fi
