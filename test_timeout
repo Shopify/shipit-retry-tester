@@ -5,8 +5,8 @@ if [ $((foo%2)) -eq 0 ];
 then
     echo "num is even, so sleeping for 20seconds and making it timeout"
     sleep 20s
-    echo "done!";
+    echo "done!"
 else
-    echo "echo num is even, sso finishing up deploy right now"
-    echo "done!";
+    echo "echo num is odd, sso finishing up deploy right now"
+    echo "done!"
 fi
